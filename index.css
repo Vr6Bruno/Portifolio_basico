@@ -10,6 +10,9 @@
       justify-content: space-evenly;
       align-items: center;
     }
+    nav ul li a:hover{
+        color: #ce1e1e;
+    }
     ul li{
       color: white;
     }
@@ -109,6 +112,9 @@
         color: #FFFFFF;
         border-radius: 5px;
         text-decoration: none;
+      }
+    .botao:hover {
+        color: #ce1e1e;
       }
       .redes-sociais {
         display: flex;
