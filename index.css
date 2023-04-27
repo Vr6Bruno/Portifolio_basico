@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    nav ul{
+      height: 30px;
+      background-color: #333;
+      display: flex;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    ul li{
+      color: white;
+    }
+    ul li a{
+      color: white;
+      text-decoration: none;
+    }
+    section#Portfólio h1{
+      width: 100%;
+      height: auto;
+      text-align: center;
+      font-size: 50px;
+      color: rgb(34, 90, 173);
+    }
+    section#Portfólio{
+      height: 800px;
+      background-color: aquamarine;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+    section#Projetos{
+      height: 800px;
+      background-color: rgb(95, 183, 209);
+    }
+    section#Projetos h2{
+      text-align: center;
+      font-size: 50px;
+      background-color: yellow;
+    }
+    section#Projetos h3{
+      text-align: center;
+      font-size: 30px;
+      padding-top: 3%;
+    }
+    section#Informações{
+      height: 800px;
+      background-color: rgb(167, 177, 145);
+    }
+    section#Portfólio img{
+      width: 400px;
+      align-items: center;
+      padding: 200px;
+    }
+    footer{
+      background-color: #333;
+      height: 60px;
+    }
+    .imagem-redonda{
+      border-radius: 50%;
+    }
+    .paragrafo-com-espacamento{
+      line-height: 7.0;
+      text-align: center;
+      font-size: 18px;
+    }
+    section#Informações h4{
+      text-align: center;
+      font-size: 50px;
+      background-color: yellow;
+    }
+    section#Informações h3{
+      text-align: center;
+      font-size: 30px;
+      padding-top: 5%;
+    }
+    .link{
+      text-align: center;
+      
+    }
+    .texto{
+        padding-top: 5%;
+        text-align: justify;
+        max-width: 500px;
+        margin: auto;
+        font-size: 18px;
+        
+    }
+    section#Contato{
+        height: 800px;
+        background-color: #20ca6c; 
+    }
+    section#Contato h4{
+        text-align: center;
+        font-size: 50px;
+        background-color: yellow;
+    }
+    section#Contato h3{
+        text-align: center;
+        font-size: 30px;
+        padding-top: 5%;
+    }
+    .botao {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #FFFFFF;
+        border-radius: 5px;
+        text-decoration: none;
+      }
+      .redes-sociais {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 150px;
+      }
+      
+      .redes-sociais a {
+        display: inline-block;
+        margin: 0 10px;
+        padding: 10px;
+        background-color: #333;
+        border-radius: 5px;
+      }
+      section#Contato h3{
+        margin-top: 50px;
+      }
+      
+      
+      
+      
+      
