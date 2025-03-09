@@ -1,140 +1,374 @@
-*{
-    margin: 0;
-    padding: 0;
-    }
-    nav ul{
-      height: 30px;
-      background-color: #333;
-      display: flex;
-      width: 100%;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    nav ul li a:hover{
-        color: #ce1e1e;
-    }
-    ul li{
-      color: white;
-    }
-    ul li a{
-      color: white;
-      text-decoration: none;
-    }
-    section#Portfólio h1{
-      width: 100%;
-      height: auto;
-      text-align: center;
-      font-size: 50px;
-      color: rgb(34, 90, 173);
-    }
-    section#Portfólio{
-      height: 800px;
-      background-color: aquamarine;
-      display: flex;
-      justify-content: space-evenly;
-      align-items: center;
-    }
-    section#Projetos{
-      height: 800px;
-      background-color: rgb(95, 183, 209);
-    }
-    section#Projetos h2{
-      text-align: center;
-      font-size: 50px;
-      background-color: yellow;
-    }
-    section#Projetos h3{
-      text-align: center;
-      font-size: 30px;
-      padding-top: 3%;
-    }
-    section#Informações{
-      height: 800px;
-      background-color: rgb(167, 177, 145);
-    }
-    section#Portfólio img{
-      width: 400px;
-      align-items: center;
-      padding: 200px;
-    }
-    footer{
-      background-color: #333;
-      height: 60px;
-    }
-    .imagem-redonda{
-      border-radius: 50%;
-    }
-    .paragrafo-com-espacamento{
-      line-height: 7.0;
-      text-align: center;
-      font-size: 18px;
-    }
-    section#Informações h4{
-      text-align: center;
-      font-size: 50px;
-      background-color: yellow;
-    }
-    section#Informações h3{
-      text-align: center;
-      font-size: 30px;
-      padding-top: 5%;
-    }
-    .link{
-      text-align: center;
-      
-    }
-    .texto{
-        padding-top: 5%;
-        text-align: justify;
-        max-width: 500px;
-        margin: auto;
-        font-size: 18px;
-        
-    }
-    section#Contato{
-        height: 800px;
-        background-color: #20ca6c; 
-    }
-    section#Contato h4{
-        text-align: center;
-        font-size: 50px;
-        background-color: yellow;
-    }
-    section#Contato h3{
-        text-align: center;
-        font-size: 30px;
-        padding-top: 5%;
-    }
-    .botao {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #333;
-        color: #FFFFFF;
-        border-radius: 5px;
-        text-decoration: none;
-      }
-    .botao:hover {
-        color: #ce1e1e;
-      }
-      .redes-sociais {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 150px;
-      }
-      
-      .redes-sociais a {
-        display: inline-block;
-        margin: 0 10px;
-        padding: 10px;
-        background-color: #333;
-        border-radius: 5px;
-      }
-      section#Contato h3{
-        margin-top: 50px;
-      }
-      
-      
-      
-      
-      
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+
+nav {
+  background-color: #1a1a2e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  color: #f4a261;
+  border-bottom: 2px solid #f4a261;
+}
+
+
+section#Portfólio {
+  height: 100vh;
+  background: linear-gradient(to right, #2b2d42, #8d99ae);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 20px;
+}
+
+section#Portfólio h1 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+
+section#Portfólio img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: 20px;
+  border: 5px solid #f4a261;
+  transition: transform 0.3s ease-in-out; 
+}
+
+section#Portfólio img:hover {
+  transform: scale(1.1); 
+}
+
+
+
+
+
+section#Projetos {
+  padding: 80px 20px;
+  background-color: #2b2d42;  
+  color: white;
+  text-align: center;
+}
+
+section#Projetos h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  color: #f4a261;  
+}
+
+
+.projetos-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.projeto-item {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  border: none;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.projeto-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+
+.projeto-item h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.projeto-item p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+.botao-estilizado {
+  display: inline-block;
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #ff7b00, #ff3c00); 
+  color: white;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  width: 100%;
+  max-width: 220px;
+}
+
+
+.botao-estilizado:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+  background: linear-gradient(135deg, #ff5a00, #d43c00); 
+}
+
+
+@media (max-width: 768px) {
+  .botao-estilizado {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+@media (max-width: 768px) {
+  .projetos-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+  }
+}
+
+
+
+section#Habilidades {
+  padding: 60px 20px;
+  background-color: #2b2d42;  
+  color: white;
+  text-align: center;
+}
+
+section#Habilidades h4 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-transform: uppercase;  
+  letter-spacing: 2px;  
+  font-family: 'Poppins', sans-serif;  
+}
+
+.habilidades-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);  
+  gap: 30px;  
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.habilidade-item {
+  background-color: #ffffff;
+  color: #2b2d42;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);  
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: left;
+  border: none;  
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.habilidade-item:hover {
+  transform: translateY(-10px);  
+  box-shadow: 0px 12px 25px rgba(0, 0, 0, 0.2);  
+}
+
+.habilidade-item h5 {
+  font-size: 24px;  
+  font-weight: 600;
+  color: #1a1a2e;
+  margin-bottom: 15px;
+  text-transform: capitalize;  
+  font-family: 'Montserrat', sans-serif;  
+}
+
+.habilidade-item p {
+  font-size: 18px;  
+  color: #555;
+  margin-bottom: 20px;
+  line-height: 1.7;  
+  font-family: 'Roboto', sans-serif;  
+}
+
+.botao-habilidade {
+  padding: 12px 25px;
+  background-color: #f4a261;
+  color: #ffffff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  display: inline-block;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  width: 100%;
+  max-width: 200px;
+  margin-top: 15px;
+  font-family: 'Poppins', sans-serif;  
+}
+
+.botao-habilidade:hover {
+  background-color: #e76f51;
+  transform: scale(1.05);  
+}
+
+
+@media (max-width: 768px) {
+  .habilidades-container {
+    grid-template-columns: repeat(1, 1fr);  
+    gap: 20px;
+  }
+}
+
+
+
+section#Sobre-mim {
+  background-color: #2b2d42;
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+section#Sobre-mim h2 {
+  font-size: 42px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #ffbe0b; 
+  margin-bottom: 20px;
+}
+
+section#Sobre-mim p {
+  font-size: 20px;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+section#Contato {
+  background-color: #2b2d42;
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+section#Contato h2 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Poppins', sans-serif;
+  color: #ffbe0b;
+}
+
+
+
+
+section#Contato .texto {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #ddd;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+}
+
+
+.redes-sociais {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.botao-social {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #22223b;
+  padding: 12px 25px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.botao-social i {
+  font-size: 22px;
+}
+
+
+.botao-social.github { background: #333; }
+.botao-social.telegram { background: #0088cc; }
+.botao-social.linkedin { background: #0077b5; }
+
+.botao-social:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
